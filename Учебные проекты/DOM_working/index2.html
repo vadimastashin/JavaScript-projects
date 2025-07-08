@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример 2</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>Пункт1</li>
+        <li>Пункт2</li>
+    </ul>
+    <ul>
+        <li>Пункт1</li>
+        <li>Пункт2</li>
+    </ul>
+    
+
+    <script>
+        let elements = document.querySelectorAll('ul > li:first-child')
+        for(let element of elements){
+            element.style.color = 'green'
+            element.innerHTML = "Новое значение"
+        }
+       
+    </script>
+</body>
+
+</html>
